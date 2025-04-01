@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Student Management</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Course Management</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Student Management</h1>
+  <h1>📚 Course Management</h1>
 
-  <form id="studentForm">
-    <input type="text" id="name" placeholder="Name" required />
-    <input type="email" id="email" placeholder="Email" required />
-    <button type="submit">Add Student</button>
+  <form id="courseForm">
+    <input type="text" id="name" placeholder="Course Name" required />
+    <input type="text" id="description" placeholder="Description" required />
+    <button type="submit">Add Course</button>
   </form>
 
-  <h2>Student List</h2>
-  <ul id="studentList"></ul>
+  <h2>Available Courses:</h2>
+  <ul id="courseList"></ul>
 
   <script src="script.js"></script>
 </body>
+<hr>
+<h2>Student Management</h2>
+<input type="text" id="studentName" placeholder="Student Name">
+<input type="email" id="studentEmail" placeholder="Student Email">
+<button onclick="addStudent()">Add Student</button>
+
+<h3>Available Students:</h3>
+<ul id="studentList"></ul>
+<hr>
+<h2>Enroll Student in a Course</h2>
+
+<select id="studentSelect">
+  <option disabled selected>Choose a student</option>
+</select>
+
+<select id="courseSelect">
+  <option disabled selected>Choose a course</option>
+</select>
+
+<button onclick="enrollStudent()">Enroll</button>
+
+<h3>Enrollments:</h3>
+<ul id="enrollmentList"></ul>
+
 </html>
