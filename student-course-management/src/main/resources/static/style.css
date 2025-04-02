@@ -1,15 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  
-  form input {
-    margin-right: 10px;
-    padding: 5px;
-  }
-  
-  button {
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+  padding: 40px;
+  color: #333;
+}
+
+h1, h2 {
+  color: #222;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+form, .form-group {
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 10px;
+  margin-right: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
